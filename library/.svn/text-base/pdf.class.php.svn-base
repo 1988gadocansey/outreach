@@ -1,0 +1,259 @@
+<?php
+/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of pdfclass
+ *
+ * @author orcons systems
+ */
+class pdfclass  extends FPDF{
+   
+    //put your code here
+    function  __construct() {
+        parent::__construct('L');
+                
+    }
+  public function  Header(){
+    //Put watermark
+	$this->Image('../../../library/payVouchersLogo2_smaller.jpg',90,60,100);  //put in coat of arms
+	$this->SetFont('Arial', 'B',10);
+	//place this as an image
+}
+
+function Footer(){
+    //Position at 1.5 cm from bottom
+    $this->SetY(-15);
+    //Arial italic 8
+    $this->SetFont('Arial','I',8);
+    //Page number
+    $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
+}//end Footer
+
+function PeopleData($date,$datefrom,$dateto,$name,$region="",$district="",$agency="",$staffid="",$staffidold="XXXXXXX",$ssfno="",$department="",$grade="",$unit="",$cost="",$level="",$point="",$scale=""){
+    //Column widths
+    $w=array(25,97,25,100);
+
+	$this->Cell(32,6,"CONTROLLER",'TLR');
+	$this->Cell($w[0],6,"DATE",'1');
+	$this->Cell($w[1],6,$date,'1');
+	$this->Cell($w[2],6,"REGION",'1');
+	$this->Cell($w[3],6,$region,'1');
+	$this->Ln();
+
+	$this->Cell(32,6,"AND",'LR');
+	$this->Cell($w[0],6,"PERIOD",'LRB');
+	$this->Cell($w[1],6,"FROM:     ".$datefrom."       TO:  ".$dateto,'LRB'); //evaluate the no of days in a month
+	$this->Cell($w[2],6,"DISTRICT",'LRB');
+	$this->Cell($w[3],6,$district,'LRB');
+	$this->Ln();
+
+	$this->Cell(32,6,"ACCOUNTANT",'LR');
+        $this->Cell($w[0],6,"NAME",'LRB');
+	$this->Cell($w[1],6, $name,'LRB');
+	$this->Cell($w[2],6,"AGENCY",'LRB');
+	$this->Cell($w[3],6,$agency,'LRB');  //need to include agency in db
+	$this->Ln();
+
+	$this->Cell(32,6,"GENERAL'S",'LR');
+	$this->Cell($w[0],6,"StAFF ID",'LRB');
+	$this->Cell($w[1],6, $staffid.'   '.$staffidold.'   S.S.F. No '.$ssfno,'LRB');
+	$this->Cell($w[2],6,"DEPT.",'LRB');
+	$this->Cell($w[3],6,$department,'LRB');
+	$this->Ln();
+
+	$this->Cell(32,6,"DEPARTMENT",'LR');
+	$this->Cell($w[0],6,"GRADE",'LRB');
+	$this->Cell($w[1],6, $grade,'LRB');
+	$this->Cell($w[2],6,"UNIT",'LRB');		//cost center is included after this
+	$this->Cell($w[3],6,$unit."  COST CENTRE   ".$cost,'LRB');
+	$this->Ln();
+
+	$this->Cell(32,6,"",'LRB');
+	$this->Cell($w[0],6,"LEVEL",'LRB');
+	$this->Cell($w[1],6, $level."      POINT  ".$point."      SCALE TYPE   ".$scale,'LRB');
+	$this->Cell($w[2],6,"",'LB');
+	$this->Cell($w[3],6,"",'LRB');
+	$this->Ln();
+
+    //Closure line
+	//$this->Ln();
+   //$this->Cell(array_sum($w),0,'','T');
+}//end
+
+function DetailTable($payment,$amt,$arrearsstr,$arrears,$totalpayment,$deductions,$dedamt,$totaldedamt,$ratebal){
+$sumPayments=0;
+$sumDeductions=0;
+    //Column widths
+
+    $w=array(25,16,22,84,45,36,23,28);
+	$this->Cell($w[0],6,"MONTH/YEAR",'1');
+	$this->Cell($w[1],6,"NATURE",'1');
+	$this->Cell($w[2],6,"ITEM CODE",'1');
+	$this->Cell($w[3],6,"DESCRIPTION",'1');
+	$this->Cell($w[4],6,"HRS/ORIGINAL AMOUNT",'1');
+	$this->Cell($w[5],6,"RATE(%) BALANCE",'1');
+	$this->Cell($w[6],6,"PAYMENTS",'1');
+	$this->Cell($w[7],6,"DEDUCTIONS",'1');
+	$this->Ln();
+        
+
+
+
+        
+
+                $this->Cell($w[0],6,"",'LR');
+		$this->Cell($w[1],6,"",'LR');
+		$this->Cell($w[2],6,"",'LR');
+		$this->Cell($w[3],6,"",'LR');
+		$this->Cell($w[4],6,"",'LR');
+		$this->Cell($w[5],6,"",'LR');
+		$this->Cell($w[6],6,"",'LR');
+		$this->Cell($w[7],6,"",'LR');
+		$this->Ln();
+        //payment report
+                $this->Cell($w[0],6,"",'LR');
+		$this->Cell($w[1],6,"",'LR');
+		$this->Cell($w[2],6,"",'LR');
+		$this->Cell($w[3],6,$payment,'LR');
+		$this->Cell($w[4],6,"",'LR');
+		$this->Cell($w[5],6,"",'LR');
+		$this->Cell($w[6],6,number_format($amt,2),'LR','0','R');
+		$this->Cell($w[7],6,"",'LR');
+		$this->Ln();
+
+
+        //arrears report
+        if($arrears !="" && $arrears !=0){
+                $this->Cell($w[0],6,"",'LR');
+		$this->Cell($w[1],6,"",'LR');
+		$this->Cell($w[2],6,"",'LR');
+		$this->Cell($w[3],6,$arrearsstr,'LR');
+		$this->Cell($w[4],6,"",'LR');
+		$this->Cell($w[5],6,"",'LR');
+		$this->Cell($w[6],6,number_format($arrears,2),'LR','0','R');
+		$this->Cell($w[7],6,"",'LR');
+		$this->Ln();
+        }
+                $this->Cell($w[0],6,"",'LR');
+		$this->Cell($w[1],6,"",'LR');
+		$this->Cell($w[2],6,"",'LR');
+		$this->Cell($w[3],6,"",'LR');
+		$this->Cell($w[4],6,"",'LR');
+		$this->Cell($w[5],6,"",'LR');
+		$this->Cell($w[6],6,"",'LR');
+		$this->Cell($w[7],6,"",'LR');
+		$this->Ln();
+        
+
+	//deduction loopings
+        $loopded = explode(";",$deductions);
+        $loopratebal = explode(";",$ratebal);
+        $loopdedamt = explode(";",$dedamt);
+	
+        
+	//generating blank rows
+        $effectcount =count($loopded);
+	for($i=0;$i<$effectcount;$i++){
+		$this->Cell($w[0],6,"",'LR');
+		$this->Cell($w[1],6,"",'LR');
+		$this->Cell($w[2],6,"",'LR');
+		$this->Cell($w[3],6,$loopded[$i],'LR');
+		$this->Cell($w[4],6,"",'LR');
+		$this->Cell($w[5],6,$loopratebal[$i],'LR','0','R');
+		$this->Cell($w[6],6,"",'LR');
+		$this->Cell($w[7],6,number_format($loopdedamt[$i],2),'LR','0','R');
+		$this->Ln();
+	}
+
+        //This part can be deleted if it over flows
+        $pointer = 15 - $effectcount;
+        if($pointer > 0){
+        for($j=1;$j<$pointer;$j++){
+                 $this->Cell($w[0],6,"",'LR');
+		$this->Cell($w[1],6,"",'LR');
+		$this->Cell($w[2],6,"",'LR');
+		$this->Cell($w[3],6,"",'LR');
+		$this->Cell($w[4],6,"",'LR');
+		$this->Cell($w[5],6,"",'LR');
+		$this->Cell($w[6],6,"",'LR');
+		$this->Cell($w[7],6,"",'LR');
+		$this->Ln();
+                }
+
+            }
+	//do totals
+	$this->Cell($w[0],6,"",'LR');
+	$this->Cell($w[1],6,"",'LR');
+	$this->Cell($w[2],6,"",'LR');
+	$this->Cell($w[3],6,"",'LR');
+	$this->Cell($w[4],6,"",'LR');
+	$this->Cell($w[5],6,"TOTALS",'1');
+	$this->Cell($w[6],6,number_format($totalpayment,2),'1','0','R');
+	$this->Cell($w[7],6,number_format($totaldedamt,2),'1','0','R');
+	$this->Ln();
+
+	$this->Cell(array_sum($w),0,'','T');
+	$this->Ln();
+
+}
+
+function SummaryTable($annualsy,$ytdssf,$employerssf,$ytdgross,$ytdincometax,$monthly,$paymentmode,$monthlygrosspay,$ytd,$netSalary)
+{
+$w=array(41,38,38,28,20,30,56,28);
+
+
+    //Column widths
+	$this->Cell($w[0],6,"ANNUAL SALARY",'LRB');
+	$this->Cell($w[1],6,number_format($annualsy,2),'1','0','R');
+	$this->Cell($w[2],6,"YTD SSF (WORKER)",'LRB');
+	$this->Cell($w[3],6,number_format($ytdssf,2),'1','0','R');
+	$this->Cell($w[4],6,"EMPLOYER SSF ",'LB');
+        $this->Cell($w[5],6,$employerssf,'RB','0','R');
+	$this->Cell($w[6],6,"PAYMENT MODE",'LRB');
+	$this->Cell($w[7],6,"NET SALARY",'1');
+	$this->Ln();
+
+        $paymentmode = explode(",",$paymentmode);
+	$this->Cell($w[0],6,"YTD GROSS PAY",'LRB');
+	$this->Cell($w[1],6,number_format($ytdgross,2),'1','0','R');
+	$this->Cell($w[2],6,"YTD INCOME TAX",'LRB');
+	$this->Cell($w[3],6,number_format($ytdincometax,2),'1','0','R');
+	$this->Cell($w[4],6,"MONTHLY ",'LB');
+        $this->Cell($w[5],6,number_format($monthly,2),'RB','0','R');
+	$this->Cell($w[6],6,$paymentmode[0].',','LR');  //the bank   //MultiCell
+	$this->Cell($w[7],6,"",'LR');  //part of net slaray column
+	$this->Ln();
+
+	$this->Cell($w[0],6,"MONTHLY GROSS PAY",'LRB');
+	$this->Cell($w[1],6,number_format($monthlygrosspay,2),'LRB','0','R');
+	$this->Cell($w[2],6,"PAGE",'LRB');
+	$this->Cell($w[3],6, $this->PageNO(),'LRB','0','R');
+	$this->Cell($w[4],6,"YTD   ",'LB');
+        $this->Cell($w[5],6,$ytd,'RB','0','R');
+	$this->Cell($w[6],6,$paymentmode[1],'LRB');
+	$this->Cell($w[7],6,number_format($netSalary,2),'LRB','0','R');
+	$this->Ln();
+	
+
+}//summary table
+
+function DetermineLastPayslip($theStaffID){
+	global $peopleID;
+	
+}//last pay slip
+
+
+function firstOfMonth($date) {
+return date("d-M-y", strtotime($date));
+}
+
+function lastOfMonth($date) {
+return date("d-M-y", strtotime('-1 second',strtotime('+1 month',strtotime($date))));
+}
+
+
+}
+?>

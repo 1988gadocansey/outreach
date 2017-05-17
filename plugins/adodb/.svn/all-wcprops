@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repos/!svn/ver/4/pvproject/plugins/adodb
+END
+adodb-php4.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-php4.inc.php
+END
+toexport.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/4/pvproject/plugins/adodb/toexport.inc.php
+END
+adodb-datadict.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-datadict.inc.php
+END
+adodb-active-recordx.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-active-recordx.inc.php
+END
+adodb-xmlschema.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-xmlschema.inc.php
+END
+adodb-exceptions.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-exceptions.inc.php
+END
+adodb-csvlib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-csvlib.inc.php
+END
+rsfilter.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/4/pvproject/plugins/adodb/rsfilter.inc.php
+END
+adodb-xmlschema03.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-xmlschema03.inc.php
+END
+xmlschema.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/!svn/ver/4/pvproject/plugins/adodb/xmlschema.dtd
+END
+server.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/4/pvproject/plugins/adodb/server.php
+END
+adodb-active-record.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-active-record.inc.php
+END
+adodb-errorhandler.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-errorhandler.inc.php
+END
+adodb-pear.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-pear.inc.php
+END
+adodb-iterator.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-iterator.inc.php
+END
+adodb-error.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-error.inc.php
+END
+xmlschema03.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/4/pvproject/plugins/adodb/xmlschema03.dtd
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/!svn/ver/4/pvproject/plugins/adodb/license.txt
+END
+adodb-perf.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-perf.inc.php
+END
+adodb-pager.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-pager.inc.php
+END
+adodb-time.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-time.inc.php
+END
+tohtml.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/!svn/ver/4/pvproject/plugins/adodb/tohtml.inc.php
+END
+adodb-errorpear.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-errorpear.inc.php
+END
+adodb.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb.inc.php
+END
+pivottable.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/4/pvproject/plugins/adodb/pivottable.inc.php
+END
+adodb-lib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-lib.inc.php
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/4/pvproject/plugins/adodb/readme.txt
+END
+adodb-memcache.lib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/4/pvproject/plugins/adodb/adodb-memcache.lib.inc.php
+END

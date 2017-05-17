@@ -1,0 +1,562 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.get-started {
+  display:none;
+}
+div.get-started-alt {
+  margin:10px auto 20px;
+  font-size:20px;
+  width:746px;
+  color:#333333;
+  text-align:center;
+}
+
+
+sup {vertical-align:top;font-size:0.8em;}
+form {margin:0;padding:0;}
+
+
+#header-g3 {
+	height:50px;
+	width:100%;
+	display:block;
+	position:relative;
+	left: 0%;
+	margin-top: -7px;
+	margin-right: 0;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	
+}
+
+#header-g3 h1 {
+    margin:0px;
+    padding:0px;
+    position:relative;
+    display:block;
+    left:25px;
+}
+.top-nav-signin {
+    height:25px;
+    background-color:#f3f3f3;
+    width:100%;
+    font-size:12px;
+    line-height:20px;
+    z-index:1;
+    padding:5px 0 0;
+    color:#333;
+}
+.top-nav-links {
+    width:850px;
+    margin:0 auto;padding:0px;
+}
+.aol-help {
+    float:left;
+}
+.sigin-link {
+    float:right;
+}
+.top-nav-signin a {
+    color:#333;
+    text-decoration:none;
+}
+a.login-link {
+    color:#336699;
+    text-decoration:none;
+}
+a.bigger-aol {font-size:13px;font-weight:bold;}
+
+div.get-started {
+  margin:30px auto 10px;
+  font-size:32px;
+  width:775px;
+  color:#333333;
+  text-align:center;
+}
+div.get-started .smaller {
+  font-size:16px;
+  font-weight:bold;
+}
+.congrats-headline {
+  text-align:left;
+}
+#header-g3 h1 span {display:none;}
+#header-login {
+  font-family:helvetica,arial,sans-serif;
+  font-size:14px;
+}
+#initRegistrationActionForm {top:3px;}
+
+#header-g3 h2 {
+    right:30px;
+    margin:0px;
+    padding:0px;
+    position:absolute;
+    top:24px;
+}
+
+#header-g3 h2.olHeader {padding:29px 0 0 0;font-size:1.8em;}
+
+#header-g3 p {
+    position:relative;
+    width:440px;
+    margin:3px auto 0 170px;padding:0px;
+    color:#727272;
+    }
+#header-g3 strong {color:#000;}
+
+.extraHead {
+    position:relative;
+    display:block;
+    width:175px;
+    font-size:0.9em;
+    float:right;
+    }
+
+
+.signInLink{
+    font-size:14px;
+    font-weight:bold;
+    float:right;
+}
+
+input#firstName, input#lastName {
+    float:left;
+    width:176px;
+    margin-right:6px;
+}
+
+.mainCont, .popCont {
+    position:relative;
+    display:block;
+    width:746px;
+    margin: 15px auto;
+	padding:0px;
+	background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #E5E5E5;
+	padding-bottom:10px;
+    }
+.popCont {width:450px;}
+
+.contBlock {
+    display:block;
+    margin:0px auto 0px;
+    padding:0px 0px 15px 0px;
+    color:#000;
+    border:none;border:0;
+    }
+.popCont .contBlock {padding:0px 0px 5px 0px;}
+.contBlock small {
+    position:relative;
+    display:block;
+    width:350px;
+    margin:0px 0px 0px 230px;padding:1px 0px 2px 0px;
+    color:#117bff;
+    clear:left;
+    font-size:0.80em;
+    font-weight:bold;
+    }
+.contBlock small.acctSecQuest {margin:0px 0px 0px 4px;display:none;}
+.contBlock small.passHelp {display:none;}
+.mainCont a {color:#336699;text-decoration:none;}
+.mainCont a:hover {text-decoration:underline;}
+
+.contBlock h3, .doubleContBlock h3 {
+    display:none;
+}
+#check-avail-butt {
+	display:block;
+    padding:0 0 0 226px;
+    margin:0;
+    clear:both;
+    width:369px;
+}
+
+.phantomButtOn span {
+	cursor:pointer;
+	color:#336699;
+}
+
+#check-avail-butt a {
+	position:relative;
+	visibility:hidden;
+	padding-left:7px;
+}
+
+.contBlock h4 {
+    position:relative;
+    display:block;
+    height:auto;
+    margin:30px 0 30px 0;padding:0;
+    font-size:1.2em;
+    }
+.popCont .contBlock h4 {margin:10px 0px 0px 20px;}
+
+.contBlock p {
+    margin:20px 0px 15px 20px;
+    color:#555;
+    }
+.contBlock.submitBut {text-align:center;margin-top:10px;border:0px;border:none;padding:10px 0px 30px 0px;}
+
+.contBlock .cancel {position:relative;float:left;}
+.popCont .contBlock p {margin:5px 20px 15px 20px;}
+
+.contBlock input, .addlInput {
+    position:relative;
+    width: 365px;
+    height:28px;
+    float:left;
+    font-size:1em;
+    margin:13px 0 0 0;
+    padding:4px 0 0 4px;
+    border:1px solid #acacac;
+}
+
+#availSns, #availLogin {
+    position:relative;
+    display:block;
+    padding:0;margin:2px 0 10px 0;
+    font-size:0.9em;
+    clear:both;
+    }
+
+.contBlock #availSns ul input {
+    display:inline;
+    width:12px; height:12px;
+    margin: 3px 0 0 0; padding: 0px;
+    margin-left:20px;
+    float:none;
+    border:0;
+    }
+
+#availSns ul {list-style-type:none;margin:0 10px;padding:0;}
+#availSns li {list-style-type:none;padding-bottom:2px;}
+#availSns h4, #availLogin h4 {
+    height:auto;
+    margin:0;padding:5px 0 0 0;
+    font-size:1.1em;
+    font-weight:bold;
+    text-align:center;
+    color:#dd3c10;
+    }
+#availSns h4 p, #availLogin h4 p {font-size:.9em;font-weight:normal;text-align:left;}
+#availSns a {
+    font-size:12px;
+    font-weight:bold;
+    margin:0 0 0 226px;
+    padding-bottom:5px;
+    text-decoration:none;
+}
+
+#availSns p, #availLogin p {
+    margin:4px 0 4px 0;padding:0;
+}
+
+.contBlock #availSns ul label {
+    display:inline;
+    height:8px;
+    padding:0 0 0 5px;
+    vertical-align:middle;
+    clear:none;
+    float:none;
+    }
+.snClose {
+    position:relative;
+    display:block;
+    text-align:center;
+    border-top:1px solid #bbd7ea;
+    font-size:0.9em;
+    padding-top:2px;margin-top:5px;
+    clear:both;
+    margin-top:5px;
+    }
+
+.contBlock select {
+	position:relative;
+    font-size:1.4em;
+    float:left;
+    width:auto;
+    line-height:35px;
+    padding:5px 5px 5px 7px;margin:0;
+    border:1px solid #d9d9d9; -moz-border-radius: 5px; -webkit-border-radius: 5px;border-radius: 5px 5px;
+}
+
+.contBlock label, .addlLabel {
+    width:214px;
+    font-size:14px;
+    position:relative;
+    display:block;
+    height:28px;
+    float:left;
+    margin:13px 12px 0px 0px;
+    padding:4px 0px 0px 0px;
+    text-align:right;
+    clear:left;
+    line-height:26px;
+    font-weight:bold;
+    color:#333;
+}
+.opt-label {
+font-size:14px;
+color:#999;
+font-weight:normal;
+}
+.contBlock label#lastName-label{display:none;}
+
+.addlLabel {padding:0;}
+.bulletLabel {vertical-align:top;font-weight:bold;}
+.contBlock label em {font-size:.90em;}
+.contBlock label.snLabel {padding:0px;}
+.contBlock label.inputError, .addlLabel.inputError {color:#dd3c10;}
+#createEmail .longLabel {line-height:16px;padding-top:2px;}
+.contBlock label.labelErr {color:#333;line-height:16px;padding-top:4px;}
+.contBlock label span#label-err-text {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+label.selectLabel {margin-top:13px;}
+
+#name-fields-cont {
+    float:left;
+    width:400px;
+}
+#fname-cont {
+    float:left;
+    margin: 0 3px 0 0;
+    width:182px;
+}
+#lname-cont {
+    float:left;
+    width:182px;
+}
+#fname-cont .doneText, #lname-cont .doneText {
+  width:175px;
+  margin-left:0px;
+}
+#tos p {
+color:#666;
+padding:0 0 0 226px;
+margin:0;
+text-align:left;
+width:370px;
+float:left;
+}
+
+fieldset#chooseAccount {display:none;}
+fieldset#createEmail {margin:5px 0 5px 0;}
+fieldset#registerEmail {margin:5px 0 5px 0;}
+fieldset#aboutYou {margin:5px 0 5px 0;}
+fieldset#verify {margin:5px 0 5px 0;}
+fieldset#tos {
+    font-size:10px;
+    text-align:center;
+    margin: 0 0 6px;
+}
+fieldset#congratsMsg {
+    margin:0px;
+    *margin-left:0px;
+}
+
+label.hidden {
+    display:none;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position:absolute;
+    clear:none;
+    top: -10px;
+	}
+label.tos-label {
+    width:700px;
+    height:auto;
+    margin:auto;
+    padding:auto;
+    text-align:left;
+    vertical-align:bottom;
+    font-weight:normal;
+}
+
+
+
+.asqFields {
+    position:relative;
+    }
+
+.postInp, #postInpSN {
+    position:relative;
+    display:block;
+    height:16px;
+    float:left;
+    margin:10px 0px 0px 5px;padding:14px 0 0 0;
+    vertical-align:bottom;
+    font-size:14px;
+    font-weight:bold;
+    color:#333;
+    }
+#postInpSn .combo {
+  float:left;
+}
+#postInpSn .combo input {
+  width:108px;
+}
+#domainSelect {
+  float:left;
+  width:128px;
+  margin-top: 7px;
+}
+
+#domainAt{
+    float: left;
+    margin: 21px 5px 0px;
+    color:#999999;
+}
+
+.doubleFields {
+    position:relative;
+    display:block;
+    width:640px;
+    float: left;
+    }
+
+.leftFields {width:410px;float:left;}
+
+.rightFields {
+    position:relative;
+    display:block;
+    width:330px;
+    float:right;
+    }
+.rightFields label {width:65px;}
+.contBlock .rfWidth {width:50px;clear:none;}
+
+.wordVerify {
+    position:relative;
+	margin: 15px 0 0 226px;
+    padding:0 0 4px;
+    display:block;
+    width:350px;
+    height:110px;
+    clear:both;
+    }
+
+.wordVerButtons {
+    position:relative;
+    display:block;
+    width:90px;
+    float:right;
+}
+
+
+a#refreshWordverBtn:hover, a#playAudBtn:hover, a.signInButt:hover {color:#6c6c6c;}
+
+.tos {
+    position:relative;
+    display:block;
+    padding:20px;
+    }
+
+/*.contBlock .wordVer {width:220px;height:25px;margin-top:5px;}*/
+
+.has-username {
+   top:5px;
+   right:90px;
+   position:absolute;
+   float:left;
+   width: auto;
+}
+
+.contBlock .reqFields {
+    position:relative;
+    display: none;
+    margin:5px 13px 10px 10px;
+    font-size:0.9em;font-weight:bold;
+    width:180px;
+    clear: both;
+}
+
+.create-acct-title{
+    font-weight:bold;
+    font-size:18px;
+    margin:5px;
+}
+.mail-exp-text {
+    font-size:12px;
+    margin:5px;
+}
+
+.contBCongrats {
+    border:1px solid #BBD7EA;
+    top:10px;
+}
+
+.contBlock .submit, .submit {
+    background:transparent  url(../img/signin_butt.jpg) no-repeat scroll left top;
+    border:0px solid #FFFFFF;
+    cursor:pointer;
+    font-size:12px;
+	font-weight:bold;
+    height:32px;
+    padding:0px;
+    width:104px;
+    color:#FFF;
+    font-family:helvetica,arial,sans-serif;
+}
+.contBlock .submit:hover, .submit:hover {
+    background:transparent url(../img/signin_butt_over.jpg)
+    
+}
+
+.contBlock .clear, .clear {
+    background:transparent  url(../img/signin_butt.jpg) no-repeat scroll left top;
+    border:0px solid #FFFFFF;
+	float:right;
+    cursor:pointer;
+    font-size:14px;font-weight:bold;
+    height:32px;
+    margin:0 150px 0 0;
+    padding:0px;
+    width:104px;
+    color:#FFF;
+    font-family:helvetica,arial,sans-serif;
+}
+.contBlock .clear:hover, .clear:hover {
+    background:transparent url(../img/signin_butt_over.jpg)
+}
+
+.contBlock .blWidth{width:170px; clear:none;}
+
+/** submit-sect **/
+ .submitsect{
+	width:300px;
+	margin-left:385px;}
+.btn_cancel{
+	background:none;
+	background-color:#D14836;}	
+.btn_cancel:hover{
+	background:none;
+	background-color:#C53727;
+	box-shadow:0 1px rgba(0,0,0,0.2);
+	text-shadow:0 1px rgba(0,0,0,0.3);}
+		
+.regerror{
+    background-color: #FFFCCA;
+    background-position: 11px center;
+    background-repeat: no-repeat;
+    border: 1px solid #D0AE62;
+    border-radius: 4px 4px 4px 4px;
+	margin:0 auto;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 40px;
+	width:450px;
+}
+.regsuccess{
+	margin:5px 10px;
+	line-height:1.5em;}
+.regsuccess h2{
+	font-size:26px;}	
