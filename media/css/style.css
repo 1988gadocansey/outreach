@@ -286,9 +286,8 @@ text-decoration:none;
 	font-weight:bold;}
 .logoarea .logo{
 	display:inline-block;
-	background:url(../public/img/logo.png) no-repeat;
-	width:113px;
-	height:65px;
+	 
+	 
 	float:left;}
 .logoarea .logotitle{
 	float:right;
